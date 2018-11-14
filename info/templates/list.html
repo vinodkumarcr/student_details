@@ -1,0 +1,24 @@
+{%extends 'form.html'%}
+{%block home%}
+<div class="container jumbotron">
+  <h1>Student Details...</h1><br>
+  <table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col"><h3>Name</h3></th>
+      <th scope="col"><h3>Age</h3></th>
+      <th scope="col"><h3>Gender</h3></th>
+    </tr>
+  </thead>
+  {%for students in student.all%}
+  <tbody>
+    <tr>
+      <td><strong>{{students.name}}</strong></td>
+      <td><strong>{{students.age}}</strong></td>
+      <td><strong>{{students.gender}}</strong></td>
+    </tr>
+  </tbody>
+  {%endfor%}
+</table>
+</div>
+{%endblock%}

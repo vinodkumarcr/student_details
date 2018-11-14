@@ -1,0 +1,6 @@
+1.a projects is created called 'students'
+2.inside the project an app called 'info' is created,and it is registerd in settings
+3.in views.py a class is defined for the form called 'form',that form is created using html and it is directed to form.html which is in 'templates/form.html'
+4.a model is created for storing the data at the form
+5.when we enter the data in html form the data will save and that data is retrived in another file for displaying the all student info and that file is 'templates/list.html'
+5.all the data will be stored into 'db.sqllite3' database
